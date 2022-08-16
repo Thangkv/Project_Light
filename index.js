@@ -40,15 +40,28 @@ app.get("/",function (req,res) {
     })
 
 })
-app.get("/demo",function (req,res) {
+app.get("/trangchu",function (req,res) {
     count++;
-    res.render("demo");
-});
+    /// truy van dc db để lấy dữ liệu sản phẩm
+    const sql_txt = "SELECT * FROM products INNER JOIN\n" +
+        "\t(select SUM(Quantity) as Số_lượng,ProductID from OrderProducts B group by ProductID) B\n" +
+        "    ON products.PID = B.ProductID order by Số_lượng desc LIMIT 8;" + "SELECT * FROM `products` order by TimePost DESC LIMIT 8";
+    conn.query(sql_txt,function (err,data) {
+        if(err) res.send("404 not found");
+        else{
+            console.log('kết nối thành công');
+            var products = data[0];
+            var products_new = data[1];
+            // res.send(data);
+            res.render("trangchu",{
+                "count":count,
+                "products":products,
+                "products_new":products_new
+            });
+        }
+    })
 
-app.get("/bong-da",function (req,res) {
-    count++;
-    res.send({name:"Nguyễn Văn An",age:18});
-});
+})
 app.get("/test",function (req,res) {
     count++;
     /// truy van dc db để lấy dữ liệu sản phẩm
@@ -191,3 +204,21 @@ app.get("/products-search",function (req,res) {
     })
 })
 
+app.get("/gioithieu",function (req,res) {
+    // count++;
+    // /// truy van dc db để lấy dữ liệu sản phẩm
+    // const sql_txt = "select * from products";
+    // conn.query(sql_txt,function (err,data) {
+    //     if(err) res.send("404 not found");
+    //     else{
+    //         console.log('kết nối thành công');
+    //         var products = data;
+    //         // res.send(data);
+            res.render("gioithieu",{
+                // "count":count,
+                // "products":products
+            });
+    //     }
+    // })
+
+})

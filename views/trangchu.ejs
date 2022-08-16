@@ -74,7 +74,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="introduce.html">GIỚI THIỆU</a>
+                    <a class="nav-link" href="/gioithieu">GIỚI THIỆU</a>
                 </li>
 
                 <li class="nav-item">
@@ -194,126 +194,38 @@
     </div>
     <!--Product-->
     <div class="container" style="padding-bottom: 50px;">
-        <div class="khungchinh">
-            <ul class="menu">
-                <li>
-                    <% for(var j=0;j<products.length;j++){ %>
-                    <div class="khung">
-                        <img src="/image/<%=products[j].LinkImg%>.jpg" width="100%">
+        <div class="row">
+            <% for(var j=0;j<products.length;j++){ %>
+            <div class="col-md-3 col-sm-6 col-xs-6 col-6">
 
-                        <h5>
-                            <%=products[j].Name%>
-                        </h5>
-                        <h6>
-                            Giá bán: <%=products[j].Price%> VNĐ
-                        </h6>
+                <div class="product-block">
+                    <div class="product-img fade-box">
+                        <a href="#" title="Đèn thả đồng" class="img-resize">
+
+                            <img src="/image/<%=products[j].LinkImg%>.jpg"
+                                 class="lazyloaded">
+                            <img src="/image/<%=products[j].LinkImg%>2.jpg"  class="lazyloaded">
+                        </a>
+
                     </div>
-                    <%}%>
-                </li>
-            </ul>
+                    <div class="product-detail clearfix">
+                        <div class="pro-text">
+                            <a style=" color: black;
+                                                 font-size: 14px;text-decoration: none;" href="#"
+                               inspiration pack>
+                                <%=products[j].Name%>-
+                            </a>
+                        </div>
+                        <div class="pro-price">
+                            <p class=""><%=products[j].Price%> VNĐ</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <%}%>
         </div>
-
     </div>
-<!--        <div class="row">-->
-<!--            <div class="col-md-3 col-sm-6 col-xs-6 col-6">-->
-<!--                <div class="product-block">-->
-<!--                    <div class="product-img fade-box">-->
-<!--                        <a href="#"  class="img-resize">-->
-<!--                            <img class="lazyloaded" src="images/spden7.jpg"-->
-<!--                                 >-->
-<!--                            <img class="lazyloaded" src="images/spden7.jpg">-->
-<!--                        </a>-->
-
-<!--                    </div>-->
-<!--                    <div class="product-detail clearfix">-->
-<!--                        <div class="pro-text">-->
-<!--                            <a style=" color: black;-->
-<!--                      font-size: 14px;text-decoration: none;" href="#" inspiration-->
-<!--                               pack>-->
-
-<!--                                Đèn mới-->
-
-<!--                            </a>-->
-<!--                        </div>-->
-<!--                        <div class="pro-price">-->
-<!--                            <p class="">6,000,000₫</p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="col-md-3 col-sm-6 col-xs-6 col-6">-->
-<!--                <div class="product-block">-->
-<!--                    <div class="product-img fade-box">-->
-<!--                        <a href="#" title="Adidas Yeezy Boost 700" class="img-resize">-->
-<!--                            <img class="lazyloaded" src="images/spden8.jpg"-->
-<!--                                 alt="Adidas Yeezy Boost 700">-->
-<!--                            <img class="lazyloaded" src="images/spden8.jpg" alt="Adidas Yeezy Boost 700">-->
-<!--                        </a>-->
-
-<!--                    </div>-->
-<!--                    <div class="product-detail clearfix">-->
-<!--                        <div class="pro-text">-->
-<!--                            <a style=" color: black;-->
-<!--                      font-size: 14px;text-decoration: none;" href="">-->
-<!--                                Đèn đồng-->
-<!--                            </a>-->
-<!--                        </div>-->
-<!--                        <div class="pro-price">-->
-<!--                            <p class="">6,800,000₫</p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="col-md-3 col-sm-6 col-xs-6 col-6">-->
-<!--                <div class="product-block">-->
-<!--                    <div class="product-img fade-box">-->
-<!--                        <a href="#" title="Adidas Zx 4000 4d" class="img-resize">-->
-<!--                            <img class="lazyloaded" src="images/spden10.jpg"-->
-<!--                                 alt="Adidas Zx 4000 4d">-->
-<!--                            <img class="lazyloaded" src="images/spden10.jpg">-->
-<!--                        </a>-->
-
-<!--                    </div>-->
-<!--                    <div class="product-detail clearfix">-->
-<!--                        <div class="pro-text">-->
-<!--                            <a style=" color: black;-->
-<!--                      font-size: 14px;text-decoration: none;" href="#" title="Adidas Zx 4000 4d" inspiration pack>-->
-<!--                                Đèn LED-->
-<!--                            </a>-->
-<!--                        </div>-->
-<!--                        <div class="pro-price">-->
-<!--                            <p class="">6,400,000₫</p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="col-md-3 col-sm-6 col-xs-6 col-6">-->
-<!--                <div class="product-block">-->
-<!--                    <div class="product-img fade-box">-->
-<!--                        <a href="#" title=" Ultra Boost" class="img-resize">-->
-<!--                            <img class="lazyloaded" src="images/spden11.jpg"-->
-<!--                                 alt=" Ultra Boost">-->
-<!--                            <img class="lazyloaded" src="images/spden11.jpg" alt=" Ultra Boost">-->
-<!--                        </a>-->
-
-<!--                    </div>-->
-<!--                    <div class="product-detail clearfix">-->
-<!--                        <div class="pro-text">-->
-<!--                            <a style=" color: black;-->
-<!--                       font-size: 14px;text-decoration: none;" href="#" title="Adidas EQT Cushion ADV" inspiration-->
-<!--                               pack>-->
-<!--                                Đèn thủy tinh-->
-<!--                            </a>-->
-<!--                        </div>-->
-<!--                        <div class="pro-price">-->
-<!--                            <p class="">4,700,000₫</p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-    </div>
-
 
     <div class="content">
         <div class="container">
@@ -361,133 +273,7 @@
                 </div>
             </div>
             <%}%>
-<!--            <div class="item">-->
-<!--                <div class="">-->
-<!--                    <div class="product-block">-->
-<!--                        <div class="product-img fade-box">-->
-<!--                            <a href="#" title="Adidas Ultraboost W" class="img-resize">-->
-<!--                                <img src="images/spden6.jpg" alt="Adidas Ultraboost W"-->
-<!--                                     class="lazyloaded">-->
-<!--                                <img src="images/spden6.jpg" alt="Adidas Ultraboost W" class="lazyloaded">-->
-<!--                            </a>-->
 
-<!--                        </div>-->
-<!--                        <div class="product-detail clearfix">-->
-<!--                            <div class="pro-text">-->
-<!--                                <a style=" color: black;-->
-<!--                           font-size: 14px;text-decoration: none;" href="#" title="Adidas Ultraboost W" inspiration pack>-->
-<!--                                    Đèn thủy tinh-->
-<!--                                </a>-->
-<!--                            </div>-->
-<!--                            <div class="pro-price">-->
-<!--                                <p class="">5,800,000₫</p>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--&lt;!&ndash;                </div>&ndash;&gt;-->
-<!--            </div>-->
-<!--            <div class="item">-->
-<!--                <div class="">-->
-<!--                    <div class="product-block">-->
-<!--                        <div class="product-img fade-box">-->
-<!--                            <a href="#" title="Adidas Ultraboost W" class="img-resize">-->
-<!--                                <img src="images/spden9.jpg" alt="Adidas Ultraboost W"-->
-<!--                                     class="lazyloaded">-->
-<!--                                <img src="images/spden9.jpg" alt="Adidas Ultraboost W" class="lazyloaded">-->
-<!--                            </a>-->
-
-<!--                        </div>-->
-<!--                        <div class="product-detail clearfix">-->
-<!--                            <div class="pro-text">-->
-<!--                                <a style=" color: black;-->
-<!--                           font-size: 14px;text-decoration: none;" href="#" title="Adidas Ultraboost W" inspiration pack>-->
-<!--                                    Đèn tường-->
-<!--                                </a>-->
-<!--                            </div>-->
-<!--                            <div class="pro-price">-->
-<!--                                <p class="">8,600,000₫</p>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="item">-->
-<!--                <div class="">-->
-<!--                    <div class="product-block">-->
-<!--                        <div class="product-img fade-box">-->
-<!--                            <a href="#" title="Adidas Ultraboost W" class="img-resize">-->
-<!--                                <img src="images/spden12.jpg" alt="Adidas Ultraboost W"-->
-<!--                                     class="lazyloaded">-->
-<!--                                <img src="images/spden12.jpg" alt="Adidas Ultraboost W" class="lazyloaded">-->
-<!--                            </a>-->
-
-<!--                        </div>-->
-<!--                        <div class="product-detail clearfix">-->
-<!--                            <div class="pro-text">-->
-<!--                                <a style=" color: black;-->
-<!--                           font-size: 14px;text-decoration: none;" href="#" title="Adidas Ultraboost W" inspiration pack>-->
-<!--                                    Đèn ốp-->
-<!--                                </a>-->
-<!--                            </div>-->
-<!--                            <div class="pro-price">-->
-<!--                                <p class="">6,800,000₫</p>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="item">-->
-<!--                <div class="">-->
-<!--                    <div class="product-block">-->
-<!--                        <div class="product-img fade-box">-->
-<!--                            <a href="#" title="Adidas Ultraboost W" class="img-resize">-->
-<!--                                <img src="images/spden13.jpg" alt="Adidas Ultraboost W"-->
-<!--                                     class="lazyloaded">-->
-<!--                                <img src="images/spden13.jpg" alt="Adidas Ultraboost W" class="lazyloaded">-->
-<!--                            </a>-->
-
-<!--                        </div>-->
-<!--                        <div class="product-detail clearfix">-->
-<!--                            <div class="pro-text">-->
-<!--                                <a style=" color: black;-->
-<!--                           font-size: 14px;text-decoration: none;" href="#" title="Adidas Ultraboost W" inspiration pack>-->
-<!--                                    Đèn tường-->
-<!--                                </a>-->
-<!--                            </div>-->
-<!--                            <div class="pro-price">-->
-<!--                                <p class="">7,300,000₫</p>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="item">-->
-<!--                <div class="">-->
-<!--                    <div class="product-block">-->
-<!--                        <div class="product-img fade-box">-->
-<!--                            <a href="#" title="Adidas Ultraboost W" class="img-resize">-->
-<!--                                <img src="images/spden14.jpg" alt="Adidas Ultraboost W"-->
-<!--                                     class="lazyloaded">-->
-<!--                                <img src="images/spden14.jpg" alt="Adidas Ultraboost W" class="lazyloaded">-->
-<!--                            </a>-->
-
-<!--                        </div>-->
-<!--                        <div class="product-detail clearfix">-->
-<!--                            <div class="pro-text">-->
-<!--                                <a style=" color: black;-->
-<!--                           font-size: 14px;text-decoration: none;" href="#" title="Adidas Ultraboost W" inspiration pack>-->
-<!--                                    Đèn tuyêt đẹp-->
-<!--                                </a>-->
-<!--                            </div>-->
-<!--                            <div class="pro-price">-->
-<!--                                <p class="">5,300,000₫</p>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-
-<!--        </div>-->
     </div>
 
 
