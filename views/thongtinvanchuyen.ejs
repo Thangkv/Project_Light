@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thông tin vận chuyển</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/lab4.css">
+    <link rel="stylesheet" href="libs/nivoslider/default/default.css">
+    <link rel="stylesheet" href="libs/nivoslider/nivo-slider.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="libs/fontawesome/css/all.css">
+    <!--    Bosung-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/animate/animate.min.css">
+    <link rel="stylesheet" href="plugins/fontawesome/all.css">
+    <link rel="stylesheet" href="plugins/webfonts/font.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="plugins/uikit/uikit.min.css" />
+    <link rel="stylesheet" href="css/thongtinvanchuyen.css">
+
+    <style>
+        .body1{
+            margin: 70px 0;
+        }
+        .thanhtoan1{
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+<!--------------------------Header---------------------->
+
+<div class="header">
+    <a style="color: #ffffff;text-decoration: none;" href="index.html">MIỄN PHÍ VẬN CHUYỂN VỚI ĐƠN HÀNG NỘI THÀNH > 300K
+        - ĐỔI TRẢ TRONG 30 NGÀY - ĐẢM BẢO CHẤT LƯỢNG</a>
+</div>
+
+<!--Navbar-->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+
+            <img src="images/logo.png"  class="logo-top" alt="">
+        </a>
+        <div class="desk-menu collapse navbar-collapse justify-content-md-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/trangchu">TRANG CHỦ</a>
+                </li>
+
+                <li class="nav-item lisanpham">
+                    <a class="nav-link" href="/danhsachsanpham">DANH SÁCH SẢN PHẨM
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                    <ul class="sub_menu">
+                        <li class="">
+                            <a href="" title="ĐÈN TRANG TRÍ">
+                                <a href="/dentrangtri"> ĐÈN TRANG TRÍ</a>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="" title="ĐÈN CHÙM">
+                                <a href="/denchum"> ĐÈN CHÙM </a>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="/denoptran" title="ĐÈN ỐP TRẦN">
+                                ĐÈN ỐP TRẦN
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="/dencay" title="ĐÈN CÂY">
+                                ĐÈN CÂY
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="/dentha" title="ĐÈN THẢ">
+                                ĐÈN THẢ
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/gioithieu">GIỚI THIỆU</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/lienhe">LIÊN HỆ</a>
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+    <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar" style="    background: white;
+            width: 350px;">
+
+
+            <h3 style="font-size: 14px;
+                color: #272727;
+                text-transform: uppercase;
+                margin: 3px 0 30px 0;
+                font-weight: 500; letter-spacing: 2px;">Tìm kiếm</h3>
+            <form  action="/products-search" method="GET">
+                <label for="exampleInputEmail1">Tim Kiem</label>
+                <input type="text" name="input1" placeholder="nhap tu khoa tim kiem">
+                <a><button type="submit" class="btn btn-info">Tìm</button></a>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="icon-ol">
+        <a style="color: #272727" href="signin.html">
+            <i class="fas fa-user-alt"></i>
+        </a>
+        <a href="#" class="" uk-toggle="target: #offcanvas-flip">
+            <i class="fas fa-search" style="color: black"></i>
+        </a>
+
+        <button class="navbar-toggler" type="button" uk-toggle="target: #offcanvas-flip1" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    </div>
+    </div>
+
+</nav>
+<!-- Owl-Carousel -->
+<div class="owl-carousel owl-theme owl-carousel-setting">
+    <div class="item"><img src="images/Den-01.jpg" class="d-block w-100" alt="..."></div>
+    <div class="item"><img src="images/Den-02.jpg" class="d-block w-100" alt="..."></div>
+    <div class="item"><img src="images/Den-03.jpg" class="d-block w-100" alt="..."></div>
+</div>
+
+
+<!--------------------------Body---------------------->
+<section class="col-md-12 body1">
+    <div class="container">
+        <div class="row">
+            <article class="col-md-4">
+                <h2>Thông tin nhận hàng</h2>
+                <form>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Họ và tên" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" class="form-control" placeholder="Số điện thoại" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Địa chỉ" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Ghi chú" required>
+                    </div>
+                </form>
+            </article>
+            <article class="col-md-4">
+                <h2>Thanh toán</h2>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label thanhtoan1" for="exampleRadios1">
+                        Chuyển khoản qua ngân hàng
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                    <label class="form-check-label thanhtoan1" for="exampleRadios2">
+                        Thanh toán khi giao hàng (COD)
+                    </label>
+                </div>
+            </article>
+            <aside class="col-md-4">
+                <div class="total_cart fontroboto">
+                    <h2 >Đơn hàng (3 sản phẩm)</h2>
+                    <table class="table">
+                        <tbody>
+                        <tr>
+                            <th>Tạm tính</th>
+                            <td style="padding-left: 50px;">35.000.000đ</td>
+                        </tr>
+                        <tr>
+                            <th>Phí vận chuyển</th>
+                            <td style="padding-left: 50px;">-</td>
+                        </tr>
+                        <tr>
+                            <th>Tổng cộng</th>
+                            <td style="padding-left: 50px;">35.000.000đ</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <a href="" class="checkout btn btn-warning">Đặt hàng</a>
+                </div>
+            </aside>
+
+        </div>
+
+    </div>
+</section>
+
+<!--------------------------Footer---------------------->
+
+
+
+
+<footer class="main-footer">
+    <div class="container">
+        <div class="">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="footer-col footer-block">
+                        <h4 class="footer-title">
+                            Giới thiệu
+                        </h4>
+                        <div class="footer-content">
+                            <p>Chic Lighting là trang mua sắm trực tuyến của thương hiệu đèn trang trí giúp bạn tiếp
+                                cận xu hướng công nghệ đèn trang trí mới nhất.</p>
+                            <div class="logo-footer">
+                                <img src="images/logo-bct.png" alt="Bộ Công Thương">
+                            </div>
+                            <div class="social-list">
+                                <a href="#" class="fab fa-facebook"></a>
+                                <a href="#" class="fab fa-google"></a>
+                                <a href="#" class="fab fa-twitter"></a>
+                                <a href="#" class="fab fa-youtube"></a>
+                                <a href="#" class="fab fa-skype"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="footer-col footer-link">
+                        <h4 class="footer-title">
+                            PHÁP LÝ &amp; CÂU HỎI
+                        </h4>
+                        <div class="footer-content toggle-footer">
+                            <ul>
+                                <li class="item">
+                                    <a href="#" title="Tìm kiếm">Tìm kiếm</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#" title="Giới thiệu">Giới thiệu</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#" title="Chính sách đổi trả">Chính sách đổi trả</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#" title="Chính sách bảo mật">Chính sách bảo mật</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#" title="Điều khoản dịch vụ">Điều khoản dịch vụ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="footer-col footer-block">
+                        <h4 class="footer-title">
+                            Thông tin liên hệ
+                        </h4>
+                        <div class="footer-content toggle-footer">
+                            <ul>
+                                <li><span>Địa chỉ:</span> 8 Tôn Thất Thuyết, Cầu Giấy, Hà Nội, Vietnam</li>
+                                <li><span>Điện thoại:</span> +84 (024) 99999999</li>
+                                <li><span>Fax:</span> +84 (024) 99999999</li>
+                                <li><span>Mail:</span> Nhom4T2203E@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="footer-col footer-block">
+                        <h4 class="footer-title">
+                            FANPAGE
+                        </h4>
+                        <div class="footer-content">
+                            <div id="fb-root">
+                                <div class="footer-static-content">
+                                    <div class="fb-page" data-href=""
+                                         data-tabs="timeline" data-width="" data-height="215" data-small-header="false"
+                                         data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                                        <blockquote cite=""
+                                                    class="fb-xfbml-parse-ignore"><a
+                                                    href="https://www.facebook.com/groups/1605312529830603/?multi_permalinks=1701751043520084&notif_id=1660190024831977&notif_t=group_activity&ref=notif">CHIC LIGHTING</a>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-footer--copyright">
+        <div class="container">
+            <hr>
+            <div class="main-footer--border" style="text-align:center;padding-bottom: 15px;">
+                <p>Copyright © 2022 <a href=""> Chic Lighting</a>. <a target="_blank"
+                                                                      href="">Powered by Nhom4T2203E</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+<script type="text/javascript" src="libs/jquery/jqueryv3.6.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<script type="text/javascript" src="libs/nivoslider/jquery.nivo.slider.js"></script>
+<script type="text/javascript">
+    $('#slider').nivoSlider();
+</script>
+</body>
+</html>

@@ -1,0 +1,307 @@
+/************product**************************/
+.product{
+    padding:100px 0;
+    display:flex
+}
+.product-top{
+    padding-bottom: 40px;
+}
+.product-top p{
+    font-family: "Times New Roman";
+    font-size: 13px;
+    margin: 0 12px;
+    float: left;
+    display: inline;
+}
+/**Left Images**/
+.product-content-left{
+    width: 50%;
+}
+.product-content-left-big-img{
+    display:block;
+    max-width:80%;
+    height: 500px;
+    padding-right: 10px;
+    overflow: hidden;
+}
+.product-content-left-big-img img{
+    width: 380px;
+    height: 380px;
+    border: 1px solid #dddddd;
+    transition: all 0.3s ease-in-out;
+}
+.product-content-left-big-img:hover img{
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+.product-content-left-small-img{
+    width: 20%;
+    height: 50px;
+
+}
+.product-content-left-small-img img{
+    width: 100%;
+    margin-bottom: 5px;
+    border: 1px solid #dddddd;
+}
+/***Right-infor**/
+.product-content-right{
+    width: 50%;
+    float:right;
+}
+/***Name***/
+.product-content-right-product-name h3{
+    font-family: Arial;
+    font-size: 30px;
+}
+.product-content-right-product-name p{
+    font-size: 18px
+}
+/***Price***/
+.product-content-right-product-id{
+    margin:12px 0;
+    font-size: 18px;
+    font-family: "Arial";
+}
+/***Price***/
+.product-content-right-product-price{
+    margin:12px 0;
+    font-size: 18px;
+    font-family: "Arial";
+}
+/***Size***/
+.product-content-right-product-size{
+    display:flex;
+    font-size: 18px;
+    font-family: "Arial";
+    color: black;
+}
+.product-content-right-product-size p{
+    margin-right:18px;
+    font-family: "Arial";
+    color: black;
+}
+/***Quantity***/
+.quantity{
+    display:flex;
+}
+.quantity p{
+    font-size: 18px;
+    margin-bottom: 20px
+}
+.quantity input{
+    display:flex;
+    width: 80px;
+    height:30px;
+    padding-left: 5px;
+    margin: 0 0 12px 12px;
+    transition: all 0.3s ease;
+}
+/*****button*****/
+.product-content-right-product-button button {
+    width: 250px;
+    height: 40px;
+    margin: 0 12px 0 0;
+    transition: all 0.3s ease;
+    font-weight: 700;
+}
+/***Icon***/
+.product-content-right-product-icon{
+    display: flex;
+    margin-top:20px ;
+}
+.product-content-right-product-icon-item {
+    display: flex;
+    margin-right: 20px;
+    justify-content:center;
+    align-items: center;
+}
+.product-content-right-product-icon-item i{
+    font-size: 18px;
+    margin-right: 5px;
+    margin-bottom: 10px
+}
+/***bottom***/
+.product-content-right-bottom-title{
+    display: flex;
+}
+.product-content-right-bottom-icon{
+    padding-right: 20px;
+}
+.product-content-right-bottom-text{
+    font-size: 20px;
+}
+
+/***introduce****/
+.introduce{
+    padding-top:10px;
+    padding-bottom: 50px;
+    /*border-bottom: 1px solid gray;*/
+    /*border-top: 1px solid gray;*/
+}
+.introduce-header p{
+    font-size: 30px;
+    font-family: Arial;
+    text-align: center;
+    padding-bottom:30px;
+
+}
+.introduce-body{
+    width:1300px;
+    display: flex;
+}
+.introduce-left{
+    width:60%;
+    padding:0 20px 100px 0;
+}
+#flush-headingOne{
+    width:650px;
+    padding-left:50px
+}
+#flush-headingTwo{
+    width:650px;
+    padding-left:50px
+}
+#flush-headingThree{
+    width:650px;
+    padding-left:50px
+}
+.accordion-body{
+    float: left;
+    padding-left: 110px;
+}
+#bodyOne{
+    width: 700px;
+    height:400px;
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+.card{
+    width:440px;
+    border: 5px solid #dddddd;
+}
+.card-body{
+    text-align: center;
+    font-size: 25px;
+    font-family: Arial;
+    padding-top:15px
+}
+/******Instruction******/
+.instruction{
+    width:100%;
+    height: 1130px;
+    background-color: #dddddd;
+}
+.ins-header p{
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial;
+    padding-top: 50px;
+    padding-bottom:20px
+}
+.ins-body{
+    width:1200px;
+    height:330px;
+    border: 0.5px solid #000000;
+    margin: auto;
+    display: flex;
+}
+.ins-body-left{
+    width: 600px;
+    height: 330px;
+    border: 0.5px solid #000000;
+}
+.ins-body-left p{
+    padding-top:130px;
+    font-size:15px;
+    text-align: center;
+    font-family: Arial;
+}
+.ins-bottom{
+    padding:50px 115px 0 115px;
+    display: flex;
+}
+.ins-bottom .card{
+    height: 520px;
+    border-radius: 20px;
+    background-color: #dddddd;
+}
+.ins-card-title{
+    float: left;
+}
+.instruction .ins-bottom .card .card-body .card-title b{
+    padding-top: 15px;
+    font-size: 25px;
+    font-weight: 600;
+    float:left;
+    letter-spacing: 2px;
+}
+.instruction .ins-bottom .card .card-body .card-text{
+    padding-top:20px;
+    font-size: 13px;
+    float: left;
+    text-align: left;
+}
+.instruction .ins-bottom .card .card-note{
+    display: flex;
+    padding-bottom: 20px;
+    padding-left:10px;
+}
+.instruction .ins-bottom .card .card-note i{
+    font-size: 15px;
+    padding-right: 5px;
+    align-items: center;
+}
+.instruction .ins-bottom .card .card-note  p{
+    font-size: 15px ;
+    align-items: center;
+    line-height: 1;
+    padding-bottom: 20px;
+}
+.color1{
+    background-color: grey;
+    height: 30px;
+    width: 30px;
+}
+.color2{
+    background-color: lightgoldenrodyellow;
+    height: 30px;
+    width: 30px;
+}
+.color3{
+    background-color: dodgerblue;
+    height: 30px;
+    width: 30px;
+}
+
+.review{
+    font-size: 20px;
+    font-weight: 700;
+}
+.reviewKH{
+    padding: 10px 0;
+    border-bottom: 1px solid black;
+}
+.NameKH{
+    font-size: 20px;
+    font-weight: 700;
+}
+.feedbackKH{
+    font-size: 15px;
+}
+.checked {
+    color: orange;
+}
+.buttoncolor{
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+    background-color: orangered;
+}
+.productDetail{
+    background-color: gainsboro;
+    padding: 20px 0;
+}
+
+
+

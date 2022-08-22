@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/animate/animate.min.css">
+    <link rel="stylesheet" href="plugins/fontawesome/all.css">
+    <link rel="stylesheet" href="plugins/webfonts/font.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="plugins/uikit/uikit.min.css" />
+  </head>
+<body>
+<form  action="/products-search" method="GET">
+    <label for="exampleInputEmail1">Tim Kiem</label>
+    <input type="text" name="input1" placeholder="nhap tu khoa tim kiem">
+    <a><button type="submit" class="btn btn-info">Tìm</button></a>
+</form>
+<% for(var j=0;j<products.length-29;j++){ %>
+<div>
+    <img src="/image/<%=products[j].LinkImg1%>.jpg" onclick="changePic1()" id="getImage1">
+</div>
+<div>
+    <img src="/image/<%=products[j].LinkImg2%>.jpg" onclick="changePic2()" id="getImage2">
+</div>
+<div>
+    <img src="/image/<%=products[j].LinkImg3%>.jpg" onclick="changePic3()" id="getImage3">
+</div>
+<div>
+    <img src="/image/<%=products[j].LinkImg1%>.jpg" id="getImage4">
+</div>
+<%}%>
+    <a href="javascript:void(0);" onclick="xxx()">demo</a>
+    <br>
+    <a href="javascript:void(0);" onclick="link1()">demo1</a>
+    <a href="javascript:void(0);" onclick="link2()">demo2</a>
+    <a href="javascript:void(0);" onclick="link3()">demo3</a>
+<% for(var j=0;j<products.length-29;j++){ %>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-3" id="ppp">
+<!--                            <a href="javascript:void(0);" onclick="link1()"><img src="/image/<%=products[j].LinkImg1%>.jpg"  class="lazyloaded"></a>-->
+<!--                            <a href="javascript:void(0);" onclick="link2()"><img src="/image/<%=products[j].LinkImg2%>.jpg"  class="lazyloaded"></a>-->
+<!--                            <a href="javascript:void(0);" onclick="link3()"><img src="/image/<%=products[j].LinkImg3%>.jpg"  class="lazyloaded"></a>-->
+
+                           Toi dang test o day
+
+
+                        </div>
+                    </div>
+<!--<%}%>-->
+<!--        <% for(var j=0;j<(products1.length-29);j++){ %>-->
+<!--                    <a href="javascript:void(0);" onclick="link1()"><img src="/image/<%=products1[j].LinkImg1%>.jpg"  class="lazyloaded"></a>-->
+<!--                    <h3> <%=products1[j].Name%></h3>-->
+<!--        <%}%>-->
+
+
+    <script async defer crossorigin="anonymous" src="plugins/sdk.js"></script>
+    <script src="plugins/jquery-3.4.1/jquery-3.4.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="plugins/bootstrap/popper.min.js"></script>
+    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="plugins/owl.carousel/owl.carousel.min.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/script.js"></script>
+    <script src="plugins/uikit/uikit.min.js"></script>
+    <script src="plugins/uikit/uikit-icons.min.js"></script>
+    <script type="text/javascript">
+        function xxx(){
+            $.ajax({
+                url:"/demo1",
+                data:{
+                    search: $("input[name=input1]").val()
+                },
+                method: "get",
+                success: function (datta){
+                    $("#ppp").html(datta)
+                }
+            })
+        }
+        function link1(){
+            $.ajax({
+                url:"/demo1",
+                dataType: json,
+                data:{
+                    search:""
+                },
+                method: "get",
+                success: function (result){
+                    console.log(result);
+                    var products1 = result;
+                    for ( var j=0;j<products1.length;j++) {
+                        products1[j].LinkImg1= products1[j].LinkImg3,
+                           console.log(products1[j].LinkImg1)
+
+                    }
+                },
+                function (data){
+                    $("#ppp").html(data)
+                }
+
+
+            })
+        };
+        function link2(){
+            $.ajax({
+                url:"/test4",
+                method: "get",
+                success: function (result){
+                    console.log(result);
+                    var products1 = result;
+                    for ( var j=0;j<products1.length;j++) {
+                        products1[j].LinkImg1= products1[j].LinkImg2,
+                            console.log(products1[j].LinkImg1)
+                    }
+                },
+                error: function (err) {
+                    console.log(result);
+                }
+            })
+        };
+        function link3(){
+            $.ajax({
+                url:"/test4",
+                method: "get",
+                success: function (result){
+                    console.log(result);
+                    var products1 = result;
+                    for ( var j=0;j<products1.length;j++) {
+                        products1[j].LinkImg1= products1[j].LinkImg3,
+                            console.log(products1[j].LinkImg1)
+                    }
+                },
+                error: function (err) {
+                    console.log(result);
+                }
+            })
+        };
+        function changePic1() {
+            var Image_Id1 = document.getElementById('getImage1');
+            var Image_Id4 = document.getElementById('getImage4');
+
+                Image_Id4.src = Image_Id1.src;
+
+        }
+        function changePic2() {
+            var Image_Id2 = document.getElementById('getImage2');
+            var Image_Id4 = document.getElementById('getImage4');
+
+            Image_Id4.src = Image_Id2.src;
+
+        }
+        function changePic3() {
+            var Image_Id3 = document.getElementById('getImage3');
+            var Image_Id4 = document.getElementById('getImage4');
+
+            Image_Id4.src = Image_Id3.src;
+
+        }
+    </script>
+</body>
+
+</html>

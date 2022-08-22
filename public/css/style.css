@@ -2075,11 +2075,13 @@ ul.article-info-more li i {
   right: 0;
 }
 .owl-carousel-setting .owl-nav .owl-prev {
+  background-color: transparent;
+  border-color: transparent;
   width: 80px;
   height: 80px;
   border-radius: none !important;
   margin: initial;
-  background-color: rgb(241, 243, 243) !important;
+  /*background-color: rgb(241, 243, 243) !important;*/
   z-index: 99;
   position: relative;
   font-size: 30px;
@@ -2091,7 +2093,7 @@ ul.article-info-more li i {
   border-radius: 0 !important;
 }
 .owl-carousel-setting .owl-nav .owl-prev:hover {
-  color: #333;
+  color: transparent;
 }
 .owl-carousel-setting .owl-nav .owl-prev:focus {
   outline: none;
@@ -2105,7 +2107,9 @@ ul.article-info-more li i {
   height: 80px;
   font-size: 30px;
   margin: initial;
-  background-color: rgb(241, 243, 243) !important;
+  /*background-color: rgb(241, 243, 243) !important;*/
+  background-color: transparent;
+  border-color: transparent;
   z-index: 99;
 }
 .owl-carousel-setting .owl-nav .owl-next:hover {
@@ -2142,29 +2146,33 @@ ul.article-info-more li i {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #fff !important;
+
+  /*background-color: #fff !important;*/
+  background-color: transparent;
+  border-color: transparent;
   z-index: 99;
   box-shadow: 0 1px 1px #ccc;
 }
-.owl-product-setting .owl-nav .owl-prev:hover {
-  color: #333;
+.owl-product-setting .owl-nav .owl-prev:hover {color: white;
 }
 .owl-product-setting .owl-nav .owl-prev:focus {
   outline: none;
 }
 .owl-product-setting .owl-nav .owl-next:focus {
-  outline: none;
+  outline: transparent;
 }
 .owl-product-setting .owl-nav .owl-next {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #fff !important;
+  /*background-color: #fff !important;*/
   z-index: 99;
   box-shadow: 0 1px 1px #ccc;
+  background-color: transparent;
+  border-color: transparent;
 }
 .owl-product-setting .owl-nav .owl-next:hover {
-  color: #333;
+  color: transparent;
 }
 @media only screen and (max-width: 768px) {
   .owl-product-setting .owl-nav {

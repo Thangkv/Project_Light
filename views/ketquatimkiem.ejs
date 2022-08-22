@@ -1,0 +1,579 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="stylesheet" href="plugins/animate/animate.min.css">
+
+    <link rel="stylesheet" href="plugins/fontawesome/all.css">
+
+    <link href="plugins/webfonts/font.css"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" type="text/css">
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="plugins/uikit/uikit.min.css" />
+
+
+    <title>Tất cả sản phẩm</title>
+
+</head>
+
+<body>
+<div class="header">
+    <a style="color: #ffffff;text-decoration: none;" href="index.html">MIỄN PHÍ VẬN CHUYỂN VỚI ĐƠN HÀNG NỘI THÀNH > 300K
+        - ĐỔI TRẢ TRONG 30 NGÀY - ĐẢM BẢO CHẤT LƯỢNG</a>
+</div>
+
+<!--Navbar-->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+
+            <img src="images/logo.png"  class="logo-top" alt="">
+        </a>
+        <div class="desk-menu collapse navbar-collapse justify-content-md-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">TRANG CHỦ</a>
+                </li>
+
+                <li class="nav-item lisanpham">
+                    <a class="nav-link" href="detailproduct.html">DANH SÁCH SẢN PHẨM
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                    <ul class="sub_menu">
+                        <li class="">
+                            <a href="detailproduct.html" title="ĐÈN TRANG TRÍ">
+                                ĐÈN TRANG TRÍ
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="detailproduct.html" title="ĐÈN CHÙM">
+                                ĐÈN CHÙM
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="detailproduct.html" title="ĐÈN ỐP TRẦN">
+                                ĐÈN ỐP TRẦN
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="detailproduct.html" title="ĐÈN CÂY">
+                                ĐÈN CÂY
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="detailproduct.html" title="ĐÈN THẢ">
+                                ĐÈN THẢ
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="introduce.html">GIỚI THIỆU</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">LIÊN HỆ</a>
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+    <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar" style="    background: white;
+            width: 350px;">
+
+            <h3 style="font-size: 14px;
+                color: #272727;
+                text-transform: uppercase;
+                margin: 3px 0 30px 0;
+                font-weight: 500; letter-spacing: 2px;">Tìm kiếm</h3>
+            <form  action="/products-search" method="GET">
+                <label for="exampleInputEmail1">Tim Kiem</label>
+                <input type="text" name="input1" placeholder="nhap tu khoa tim kiem">
+                <a><button type="submit" class="btn btn-info">Tìm</button></a>
+            </form>
+
+        </div>
+    </div>
+    <div id="offcanvas-flip2" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar" style="    background: white;
+            width: 350px;">
+
+            <button class="uk-offcanvas-close" style="color:#272727" type="button" uk-close></button>
+
+            <h3 style="font-size: 14px;
+                color: #272727;
+                text-transform: uppercase;
+                margin: 3px 0 30px 0;
+                font-weight: 500; letter-spacing: 2px;">Giỏ hàng</h3>
+            <div class="site-nav-container-last" style="color:#272727">
+                <div class="cart-view clearfix">
+                    <table id="cart-view">
+                        <tbody>
+                        <tr class="item_1">
+                            <td class="img"><a href="" ><img
+                                            src="images/spden6.jpg" ></a></td>
+                            <td>
+                                <a class="pro-title-view" style="color: #272727" href=""
+                                </a>
+                                <span class="variant">Tím / 36</span>
+                                <span class="pro-quantity-view">1</span>
+                                <span class="pro-price-view">4,800,000₫</span>
+                                <span class="remove_link remove-cart"><a href=""><i style="color: #272727;"
+                                                                                    class="fas fa-times"></i></a></span>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <span class="line"></span>
+                    <table class="table-total">
+                        <tbody>
+                        <tr>
+                            <td class="text-left">TỔNG TIỀN:</td>
+                            <td class="text-right" id="total-view-cart">4,800,000₫</td>
+                        </tr>
+                        <tr>
+                            <td class="distance-td"><a href="" class="linktocart button dark">Xem giỏ hàng</a></td>
+                            <td><a href="" class="linktocheckout button dark">Thanh toán</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <a href="" target="_blank" class="button btn-check" style="text-decoration:none;"><span>Click nhận mã giảm
+                  giá ngay !</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="icon-ol">
+        <a style="color: #272727" href="signin.html">
+            <i class="fas fa-user-alt"></i>
+        </a>
+        <a href="#" class="" uk-toggle="target: #offcanvas-flip">
+            <i class="fas fa-search" style="color: black"></i>
+        </a>
+
+        <a style="color: #272727" href="#" uk-toggle="target: #offcanvas-flip2">
+            <i class="fas fa-shopping-cart"></i>
+        </a>
+        <button class="navbar-toggler" type="button" uk-toggle="target: #offcanvas-flip1" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    </div>
+    </div>
+
+</nav>
+
+<!--Banner-->
+<div>
+    <div>
+        <img src="images/introduce3.jpg" alt="Products">
+    </div>
+</div>
+<div class="breadcrumb-shop">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pd5">
+                <ol class="breadcrumb breadcrumb-arrows">
+                    <li>
+                        <a href="index.html">
+                            <span>Trang chủ</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Product.html">
+                            <span>Danh mục</span>
+                        </a>
+                    </li>
+                    <li>
+                        <span><span style="color: #777777">Tất cả sản phẩm</span></span>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<!--List Prodct-->
+<div class="container" style="margin-top: 50px;">
+    <div class="row">
+        <div class="col-md-3 col-sm-12 col-xs-12 sidebar-fix">
+            <div class="wrap-filter">
+                <div class="box_sidebar">
+                    <div class="block left-module">
+                        <div class=" filter_xs">
+                            <div class="group-menu">
+                                <div class="title_block d-block d-sm-none d-none d-sm-block d-md-none" data-toggle="collapse"
+                                     href="#collapseExample1" role="button" aria-expanded="false"
+                                     aria-controls="collapseExample1">
+                                    Danh mục sản phẩm
+                                    <span><i class="fa fa-angle-down" data-toggle="collapse"
+                                             href="#collapseExample1" role="button" aria-expanded="false"
+                                             aria-controls="collapseExample1"></i></span>
+                                </div>
+                                <div class="block_content layered-category collapse" id="collapseExample1">
+                                    <div class="layered-content card card-body"  style="border:0;padding:0">
+                                        <ul class="menuList-links">
+                                            <li class=""><a href="index.html" title="Trang chủ"><span>Trang chủ</span></a></li>
+
+                                            <li class="has-submenu level0 ">
+                                                <a title="Danh sách Sản phẩm" >Danh sách Sản phẩm<span class="icon-plus-submenu" data-toggle="collapse"
+                                                                                                       href="#collapseExample" role="button" aria-expanded="false"
+                                                                                                       aria-controls="collapseExample"></span></a>
+                                                <ul class="menu-product">
+                                                    <li><a href="" title="Đèn trang trí">Đèn trang trí</a></li>
+                                                    <li><a href="" title="Đèn chùm">Đèn chùm</a></li>
+                                                    <li><a href="" title="Đèn ốp trần">Đèn ốp trần</a></li>
+                                                    <li><a href="" title="Đèn cây">Đèn cây</a></li>
+                                                    <li><a href="" title="Đèn thả">Đèn thả</a></li>
+                                                </ul>
+
+                                            </li>
+
+                                            <li class="has-submenu-new level0 ">
+                                                <a title="Thương hiệu" >Thương hiệu<span class="icon-plus-submenu" data-toggle="collapse"
+                                                                                         href="#collapseExample" role="button" aria-expanded="false"
+                                                                                         aria-controls="collapseExample"></span></a>
+                                                <ul class="menu-product">
+                                                    <li><a href="" title="Philips">Philips</a></li>
+                                                    <li><a href="" title="Osram">Osram</a></li>
+                                                    <li><a href="" title="Cree">Cree</a></li>
+                                                    <li><a href="" title="Nichia">Nichia</a></li>
+                                                    <li><a href="" title="Panasonic">Panasonic</a></li>
+                                                    <li><a href="" title="Zumtobel">Zumtobel</a></li>
+                                                    <li><a href="" title="Cavani">Cavani</a></li>
+                                                </ul>
+
+                                            </li>
+
+
+                                            <li class=""><a href="introduce.html" title="Giới thiệu"><span>Giới thiệu</span></a></li>
+                                            <li class=""><a href="contact.html" title="Liên hệ"><span>Liên hệ</span></a></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="layered">
+                                <p class="title_block d-block d-sm-none d-none d-sm-block d-md-none" data-toggle="collapse"
+                                   href="#collapseExample2" role="button" aria-expanded="false"
+                                   aria-controls="collapseExample2">
+                                    Bộ lọc sản phẩm
+                                    <span><i class="fa fa-angle-down" data-toggle="collapse"
+                                             href="#collapseExample2" role="button" aria-expanded="false"
+                                             aria-controls="collapseExample2"></i></span>
+                                </p>
+                                <div class="block_content collapse" id="collapseExample2">
+
+                                    <div class="group-filter" aria-expanded="true">
+                                        <div class="layered_subtitle dropdown-filter"><span>Giá sản phẩm</span><span
+                                                    class="icon-control"><i class="fa fa-minus"></i></span></div>
+                                        <div class="layered-content bl-filter filter-price">
+                                            <ul class="check-box-list">
+                                                <li>
+                                                    <input type="checkbox" id="p1">
+                                                    <label for="p1">
+                                                        <span>Dưới</span> 500,000₫
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="p2">
+                                                    <label for="p2">
+                                                        500,000₫ - 5,000,000₫
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="p5">
+                                                    <label for="p5">
+                                                        <span>Trên</span> 5,000,000₫
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9 col-sm-12 col-xs-12">
+            <div class="wrap-collection-title row">
+                <div class="col-md-8 col-sm-12 col-xs-12">
+                    <h1 class="title" >
+                        Kết quả tìm kiếm sản phẩm
+
+                    </h1>
+                    <br>
+                    <div class="alert-no-filter"></div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <% for(var j=0;j<products.length;j++){ %>
+                <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+
+                    <div class="product-block">
+                        <div class="product-img fade-box">
+                            <img src="/image/<%=products[j].LinkImg1%>.jpg"  class="lazyloaded">
+
+                        </div>
+                        <div class="product-detail clearfix">
+                            <div class="pro-text">
+                                <a style=" color: black;
+                                                          font-size: 14px;text-decoration: none;" href="#"
+                                   inspiration pack>
+                                    <a href="/products-detail?PID=<%= products[j].PID %>">   <%=products[j].Name%> </a>
+                                </a>
+                            </div>
+                            <div class="pro-price">
+                                <p class="">  <%=products[j].Price%>VNĐ</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <%}%>
+            </div>
+
+            <div class="sortpagibar pagi clearfix text-center">
+                <div id="pagination" class="clearfix">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--gallery-->
+
+</section>
+<section class="">
+    <div class="content">
+        <div class="container">
+            <div class="hot_sp">
+                <h2 style="text-align:center;padding-top: 10px">
+                    <a style="font-size: 28px;color: black;text-decoration: none" href="">KHÁCH HÀNG REVIEW</a>
+                </h2>
+                <br />
+            </div>
+        </div>
+    </div>
+    <!--New-->
+    <div>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="post_item">
+                        <div class="post_featured">
+                            <a href="#" title="Review1">
+                                <img class="img-resize" style="padding-bottom:15px;" src="images/review1.jpg"
+                                     alt="review1">
+                            </a>
+                        </div>
+
+                        <div class="pro-text">
+                            <h3 class="post_title">
+                                <a style=" color: black;
+                                  font-size: 18px;text-decoration: none;" href="#" inspiration pack>
+                                    Anh Quân
+                                </a>
+                            </h3>
+                        </div>
+                        <div style="text-align:center; padding-bottom: 30px;">
+                  <span>Tôi đã làm việc với Chic Lighting chi nhánh Hà Nội qua 3 dự án nội thất cho khách hàng.
+                    Tôi đánh giá cao Chic Lighting ở thái độ phục vụ, chính sách bảo hành sản phẩm, đặc biệt xử lý lỗi phát sinh rất tốt, vì quyền lợi của khách hàng....</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="post_item">
+                        <div class="post_featured">
+                            <a href="#" title="review2">
+                                <img class="img-resize" style="padding-bottom:15px;" src="images/review2.jpg"
+                                     alt="review2">
+                            </a>
+                        </div>
+
+                        <div class="pro-text">
+                            <h3 class="post_title">
+                                <a style=" color: black;
+                                                  font-size: 18px;text-decoration: none;" href="#" inspiration pack>
+                                    Chị Lan Anh
+                                </a>
+                            </h3>
+                        </div>
+                        <div style="text-align:center; padding-bottom: 30px;">
+<span>Chic Lighting là đối tác đáng tin cậy, cung cấp mẫu mã đèn số lượng lớn, mẫu đẹp, chất lượng đáng 5 sao.
+  Đặc biệt có chính sách hỗ trợ tốt cho đơn vị xây dựng. Có vấn đề phát sinh đều xử lý nhanh chóng....</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="post_item">
+                        <div class="post_featured">
+                            <a href="#" title="review3">
+                                <img class="img-resize" style="padding-bottom:15px;" src="images/review3.jpg"
+                                     alt="review3">
+                            </a>
+                        </div>
+
+                        <div class="pro-text">
+                            <h3 class="post_title">
+                                <a style=" color: black;
+                                      font-size: 18px;text-decoration: none;" href="#" inspiration pack>
+                                    Anh Đức
+                                </a>
+                            </h3>
+                        </div>
+                        <div style="text-align:center; padding-bottom: 30px;">
+                  <span>Thấy người quen đặt cửa của Chic Lighting đẹp mình cũng thử liên hệ để đơn vị tư vấn cho nhà mới. Giá ổn với phục vụ chu đáo.
+                    Các mẫu đèn rất đa dạng và hợp với phong cách nội thất của nhà mình....</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="main-footer">
+    <div class="container">
+        <div class="">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="footer-col footer-block">
+                        <h4 class="footer-title">
+                            Giới thiệu
+                        </h4>
+                        <div class="footer-content">
+                            <p>Chic Lighting là trang mua sắm trực tuyến của thương hiệu đèn trang trí giúp bạn tiếp
+                                cận xu hướng công nghệ đèn trang trí mới nhất.</p>
+                            <div class="logo-footer">
+                                <img src="images/logo-bct.png" alt="Bộ Công Thương">
+                            </div>
+                            <div class="social-list">
+                                <a href="#" class="fab fa-facebook"></a>
+                                <a href="#" class="fab fa-google"></a>
+                                <a href="#" class="fab fa-twitter"></a>
+                                <a href="#" class="fab fa-youtube"></a>
+                                <a href="#" class="fab fa-skype"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="footer-col footer-link">
+                        <h4 class="footer-title">
+                            PHÁP LÝ &amp; CÂU HỎI
+                        </h4>
+                        <div class="footer-content toggle-footer">
+                            <ul>
+                                <li class="item">
+                                    <a href="#" title="Tìm kiếm">Tìm kiếm</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#" title="Giới thiệu">Giới thiệu</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#" title="Chính sách đổi trả">Chính sách đổi trả</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#" title="Chính sách bảo mật">Chính sách bảo mật</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#" title="Điều khoản dịch vụ">Điều khoản dịch vụ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="footer-col footer-block">
+                        <h4 class="footer-title">
+                            Thông tin liên hệ
+                        </h4>
+                        <div class="footer-content toggle-footer">
+                            <ul>
+                                <li><span>Địa chỉ:</span> 8 Tôn Thất Thuyết, Cầu Giấy, Hà Nội, Vietnam</li>
+                                <li><span>Điện thoại:</span> +84 (024) 99999999</li>
+                                <li><span>Fax:</span> +84 (024) 99999999</li>
+                                <li><span>Mail:</span> Nhom4T2203E@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="footer-col footer-block">
+                        <h4 class="footer-title">
+                            FANPAGE
+                        </h4>
+                        <div class="footer-content">
+                            <div id="fb-root">
+                                <div class="footer-static-content">
+                                    <div class="fb-page" data-href=""
+                                         data-tabs="timeline" data-width="" data-height="215" data-small-header="false"
+                                         data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                                        <blockquote cite=""
+                                                    class="fb-xfbml-parse-ignore"><a
+                                                    href="https://www.facebook.com/groups/1605312529830603/?multi_permalinks=1701751043520084&notif_id=1660190024831977&notif_t=group_activity&ref=notif">CHIC LIGHTING</a>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-footer--copyright">
+        <div class="container">
+            <hr>
+            <div class="main-footer--border" style="text-align:center;padding-bottom: 15px;">
+                <p>Copyright © 2022 <a href=""> Chic Lighting</a>. <a target="_blank"
+                                                                      href="">Powered by Nhom4T2203E</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script async defer crossorigin="anonymous" src="plugins/sdk.js"></script>
+<script src="plugins/jquery-3.4.1/jquery-3.4.1.min.js"></script>
+<script src="plugins/bootstrap/popper.min.js"></script>
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<script src="plugins/owl.carousel/owl.carousel.min.js"></script>
+<script src="plugins/uikit/uikit.min.js"></script>
+<script src="plugins/uikit/uikit-icons.min.js"></script>
+
+</body>
+
+</html>

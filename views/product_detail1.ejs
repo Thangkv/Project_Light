@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="css/productC.css">
+
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/animate/animate.min.css">
+    <link rel="stylesheet" href="plugins/fontawesome/all.css">
+    <link rel="stylesheet" href="plugins/webfonts/font.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="plugins/uikit/uikit.min.css" />
+
+    <!--Javascript-->
+    <!--    <script src="js/product.js"></script>-->
+    <!--Bosung-->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,
+      user-scalable=0" name="viewport">
+    <meta name="revisit-after" content="1 day">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="HandheldFriendly" content="true">
+    <title> Sản phẩm </title>
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+
+
+
+    <link rel="stylesheet" href="plugins/animate/animate.min.css">
+
+    <link rel="stylesheet" href="plugins/fontawesome/all.css">
+
+    <link href="plugins/webfonts/font.css" rel="stylesheet">
+    <link rel="stylesheet" href="plugins/owl.carousel/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="plugins/owl.carousel/owl.theme.default.min.css">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="plugins/uikit/uikit.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        /*------------------------------code Cuongkq-----------------*/
+        /************product**************************/
+        .product{
+            padding:100px 0;
+            display:flex
+        }
+        .product-top{
+            padding-bottom: 40px;
+        }
+        .product-top p{
+            font-family: "Times New Roman";
+            font-size: 13px;
+            margin: 0 12px;
+            float: left;
+            display: inline;
+        }
+        /**Left Images**/
+        .product-content-left{
+            width: 50%;
+        }
+        .product-content-left-big-img{
+            display:block;
+            max-width:80%;
+            height: 500px;
+            padding-right: 10px;
+            overflow: hidden;
+        }
+        .product-content-left-big-img img{
+            width: 380px;
+            height: 380px;
+            border: 1px solid #dddddd;
+            transition: all 0.3s ease-in-out;
+        }
+        .product-content-left-big-img:hover img{
+            transform: scale(1.2);
+            opacity: 0.8;
+        }
+        .product-content-left-small-img{
+            width: 20%;
+            height: 50px;
+
+        }
+        .product-content-left-small-img img{
+            width: 100%;
+            margin-bottom: 5px;
+            border: 1px solid #dddddd;
+        }
+        /***Right-infor**/
+        .product-content-right{
+            width: 50%;
+            float:right;
+        }
+        /***Name***/
+        .product-content-right-product-name h3{
+            font-family: Arial;
+            font-size: 30px;
+        }
+        .product-content-right-product-name p{
+            font-size: 18px
+        }
+        /***Price***/
+        .product-content-right-product-price{
+            margin:12px 0;
+            font-size: 18px;
+            font-family: "Arial";
+        }
+        /***Size***/
+        .product-content-right-product-size{
+            display:flex;
+        }
+        .product-content-right-product-size p{
+            margin-right:12px;
+        }
+        /***Quantity***/
+        .quantity{
+            display:flex;
+        }
+        .quantity p{
+            font-size: 18px;
+            margin-bottom: 20px
+        }
+        .quantity input{
+            display:flex;
+            width: 80px;
+            height:30px;
+            padding-left: 5px;
+            margin: 0 0 12px 12px;
+            transition: all 0.3s ease;
+        }
+        /*****button*****/
+        .product-content-right-product-button button {
+            width: 250px;
+            height: 40px;
+            margin: 0 12px 0 0;
+            transition: all 0.3s ease;
+        }
+        /***Icon***/
+        .product-content-right-product-icon{
+            display: flex;
+            margin-top:20px ;
+        }
+        .product-content-right-product-icon-item {
+            display: flex;
+            margin-right: 20px;
+            justify-content:center;
+            align-items: center;
+        }
+        .product-content-right-product-icon-item i{
+            font-size: 18px;
+            margin-right: 5px;
+            margin-bottom: 10px
+        }
+        /***bottom***/
+        .product-content-right-bottom-title{
+            display: flex;
+        }
+        .product-content-right-bottom-icon{
+            padding-right: 20px;
+        }
+        .product-content-right-bottom-text{
+            font-size: 20px;
+        }
+
+        /***introduce****/
+        .introduce{
+            padding-top:10px;
+            padding-bottom: 50px;
+        }
+        .introduce-header p{
+            font-size: 30px;
+            font-family: Arial;
+            text-align: center;
+            padding-bottom:30px;
+        }
+        .introduce-body{
+            width:1300px;
+            display: flex;
+        }
+        .introduce-left{
+            width:60%;
+            padding:0 20px 100px 0;
+        }
+        #flush-headingOne{
+            width:650px;
+            padding-left:50px
+        }
+        #flush-headingTwo{
+            width:650px;
+            padding-left:50px
+        }
+        #flush-headingThree{
+            width:650px;
+            padding-left:50px
+        }
+        .accordion-body{
+            float: left;
+            padding-left: 110px;
+        }
+        #bodyOne{
+            width: 700px;
+            height:400px;
+            overflow-x:hidden;
+            overflow-y:auto;
+        }
+        .card{
+            width:440px;
+            border: 5px solid #dddddd;
+        }
+        .card-body{
+            text-align: center;
+            font-size: 25px;
+            font-family: Arial;
+            padding-top:15px
+        }
+        /******Instruction******/
+        .instruction{
+            width:100%;
+            height: 1130px;
+            background-color: #dddddd;
+        }
+        .ins-header p{
+            text-align: center;
+            font-size: 40px;
+            font-family: Arial;
+            padding-top: 50px;
+            padding-bottom:20px
+        }
+        .ins-body{
+            width:1200px;
+            height:330px;
+            border: 0.5px solid #000000;
+            margin: auto;
+            display: flex;
+        }
+        .ins-body-left{
+            width: 600px;
+            height: 330px;
+            border: 0.5px solid #000000;
+        }
+        .ins-body-left p{
+            padding-top:130px;
+            font-size:15px;
+            text-align: center;
+            font-family: Arial;
+        }
+        .ins-bottom{
+            padding:50px 115px 0 115px;
+            display: flex;
+        }
+        .ins-bottom .card{
+            height: 520px;
+            border-radius: 20px;
+            background-color: #dddddd;
+        }
+        .ins-card-title{
+            float: left;
+        }
+        .instruction .ins-bottom .card .card-body .card-title b{
+            padding-top: 15px;
+            font-size: 25px;
+            font-weight: 600;
+            float:left;
+            letter-spacing: 2px;
+        }
+        .instruction .ins-bottom .card .card-body .card-text{
+            padding-top:20px;
+            font-size: 13px;
+            float: left;
+            text-align: left;
+        }
+        .instruction .ins-bottom .card .card-note{
+            display: flex;
+            padding-bottom: 20px;
+            padding-left:10px;
+        }
+        .instruction .ins-bottom .card .card-note i{
+            font-size: 15px;
+            padding-right: 5px;
+            align-items: center;
+        }
+        .instruction .ins-bottom .card .card-note  p{
+            font-size: 15px ;
+            align-items: center;
+            line-height: 1;
+            padding-bottom: 20px;
+        }
+        .color1{
+            background-color: grey;
+            height: 30px;
+            width: 30px;
+        }
+        .color2{
+            background-color: lightgoldenrodyellow;
+            height: 30px;
+            width: 30px;
+        }
+        .color3{
+            background-color: dodgerblue;
+            height: 30px;
+            width: 30px;
+        }
+
+    </style>
+</head>
+<body>
+
+<section class="product">
+    <div class="container">
+        <!--        <div class="product-top">-->
+        <!--            <p>Home</p><p>/</p><p>Face & Body Care</p><p>/</p><p>Face</p><p>/</p><p>Cleanser & Toner</p><p>/</p><p>Toner</p><p>/</p><p>Hydrating Gentle Foaming Cleanser</p>-->
+        <!--        </div>-->
+        <% for(var j=0;j<products.length;j++){ %>
+        <div class="product-content row">
+            <div class="product-content-left row">
+                <div class="product-content-left-small-img">
+                    <!--                    <img src="/image/<%=products[j].LinkImg%>.jpg" alt="">-->
+                    <!--                    <img src="/image/<%=products[j].LinkImg%>2.jpg" alt="">-->
+
+                    <!--                    <img src="/image/<%=products[j].LinkImg1%>.jpg"  class="lazyloaded">-->
+                    <!--                    <img src="/image/<%=products[j].LinkImg2%>.jpg"  class="lazyloaded">-->
+                    <!--                    <img src="/image/<%=products[j].LinkImg3%>.jpg"  class="lazyloaded">-->
+                    <button type="button" onclick="clickMe()">clickMe</button>
+                    <a href="javascript:void(0);" onclick="link1()"><img src="/image/<%=products[j].LinkImg1%>.jpg"  onclick="changePic1()" id="getImage1" class="lazyloaded"></a>
+                    <a href="javascript:void(0);" onclick="link2()"><img src="/image/<%=products[j].LinkImg2%>.jpg"  onclick="changePic2()" id="getImage2" class="lazyloaded"></a>
+                    <a href="javascript:void(0);" onclick="link3()"><img src="/image/<%=products[j].LinkImg3%>.jpg"  onclick="changePic3()" id="getImage3" class="lazyloaded"></a>
+
+
+                </div>
+                <div class="product-content-left-big-img row"  id="linkinsert">
+                    <!--                    <img src="/image/<%=products1[j].LinkImg1%>.jpg"  id="linkinsert" alt="">-->
+                    <img src="/image/<%=products1[j].LinkImg1%>.jpg" id="getImage4" alt="">
+                    <!--                    <img src="/image/<%=xxxx%>.jpg"  alt="">-->
+                    <h1 id="heading1">
+                        test
+                    </h1>
+                </div>
+            </div>
+            <div class="product-content-right ">
+                <!--Name-->
+                <div class="product-content-right-product-name ">
+                    <h3> <%=products[j].Name%></h3>
+
+                </div>
+                <!--Price-->
+                <div class="product-content-right-product-price" >
+                    GIÁ : <%=products[j].Price%>VNĐ
+                </div>
+                <!--Size-->
+                <div class="product-content-right-product-size">
+                    <p style="padding-top:5px"> <b>MÀU SẮC</b> : </p>
+                    <div class="size">
+                        <button type="button" class="color1"></button>
+                        <button type="button" class="color2"></button>
+                        <button type="button" class="color3"></button>
+                    </div>
+                </div>
+
+                <!--Quantity-->
+                <div class="quantity " >
+                    <p style="font-family:Times New Roman">SỐ LƯỢNG :</p>
+                    <input type="number" min="0" value="1" max="100">
+                </div>
+                <!--Button-->
+                <div class="product-content-right-product-button">
+                    <button type="button" class="btn btn-light">THÊM VÀO GIỎ HÀNG</button>
+                    <button type="button" class="btn btn-light">MUA NGAY</button>
+                </div>
+                <!--Icon-->
+                <div class="product-content-right-product-icon">
+                    <div class="product-content-right-product-icon-item">
+                        <i class="fas fa-phone-alt"></i><p>Hotline</p>
+                    </div>
+                    <div class="product-content-right-product-icon-item">
+                        <i class="fas fa-comment"></i><p>Chat</p>
+                    </div>
+                    <div class="product-content-right-product-icon-item">
+                        <i class="fas fa-envelope"></i><p>Mail</p>
+                    </div>
+                </div>
+                <hr>
+                <!--Note-->
+                <div class="product-content-right-bottom">
+                    <div class="product-content-right-bottom-title">
+                        <div class="product-content-right-bottom-icon">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <div class="product-content-right-bottom-text">
+                            <p>Miễn phí vận chuyển</p>
+                        </div>
+                    </div>
+                    <div class="product-content-right-bottom-title">
+                        <div class="product-content-right-bottom-icon">
+                            <i class="fas fa-tags"></i>
+                        </div>
+                        <div class="product-content-right-bottom-text">
+                            <p>7 ngày miễn phí trả hàng</p>
+                        </div>
+                    </div>
+                    <div class="product-content-right-bottom-title">
+                        <div class="product-content-right-bottom-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <div class="product-content-right-bottom-text">
+                            <p>Hàng chính hãng 100%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%}%>
+    </div>
+</section>
+<hr/>
+<hr/>
+<!-----------------------Introduce----------------->
+
+<section class="introduce"  >
+    <div class="introduce-header">
+        <p>Chi tiết sản phẩm</p>
+    </div>
+    <section class="col-md-12">
+        <div class="container">
+            <div class="row">
+                <p>
+                    Mã SP: DCPL88450GOLD – B698555048
+
+                    Chất liệu: Khung hợp kim mạ vàng, pha lê cao cấp
+
+                    Kích thước: D800xH1170 mm (+xích 600mm)
+
+                    Công suất: theo bóng
+
+                    Xuất xứ: Nhập khẩu
+                </p>
+
+            </div>
+
+        </div>
+    </section>
+
+</section>
+<hr/>
+
+</div>
+</section>
+
+</section>
+<script async defer crossorigin="anonymous" src="plugins/sdk.js"></script>
+<script src="plugins/jquery-3.4.1/jquery-3.4.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="plugins/bootstrap/popper.min.js"></script>
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<script src="plugins/owl.carousel/owl.carousel.min.js"></script>
+<script src="js/home.js"></script>
+<script src="js/script.js"></script>
+<script src="plugins/uikit/uikit.min.js"></script>
+<script src="plugins/uikit/uikit-icons.min.js"></script>
+<script type="text/javascript">
+
+    function link1(){
+        $.ajax({
+            url:"/products-detail",
+            dataType: json,
+            method: "get",
+            success: function (result){
+                // console.log(result);
+                var products2 = result;
+                for ( var j=0;j<products1.length;j++) {
+                    products1[j].LinkImg1= products2[j].LinkImg3
+                    // console.log(products1[j].LinkImg1)
+
+                }
+            },
+            error: function (err) {
+                console.log(result);
+            }
+        })
+    };
+    function link2(){
+        $.ajax({
+            url:"/test4",
+
+            method: "get",
+            success: function (result){
+                console.log(result);
+                var products2 = result;
+                for ( var j=0;j<products2.length;j++) {
+                    xxxx = products2[j].LinkImg2,
+                        console.log(products2[j].LinkImg2)
+                }
+            }
+        })
+
+    };
+    function link3(){
+        $.ajax({
+            url:"/test4",
+            method: "get",
+            success: function (result){
+                console.log(result);
+                var products2 = result;
+                for ( var j=0;j<products2.length;j++) {
+                    products2[j].LinkImg1= products2[j].LinkImg3,
+                        console.log(products2[j].LinkImg1)
+                }
+            },
+            error: function (err) {
+                console.log(result);
+            }
+        })
+    };
+    function clickMe(){
+
+        var h1obj=document.getElementById("heading1");
+
+        h1obj.innerHTML = "<u><i>hello wordd</i></u>";
+    }
+    function changePic1() {
+        var Image_Id1 = document.getElementById('getImage1');
+        var Image_Id4 = document.getElementById('getImage4');
+
+        Image_Id4.src = Image_Id1.src;
+
+    }
+    function changePic2() {
+        var Image_Id2 = document.getElementById('getImage2');
+        var Image_Id4 = document.getElementById('getImage4');
+
+        Image_Id4.src = Image_Id2.src;
+
+    }
+    function changePic3() {
+        var Image_Id3 = document.getElementById('getImage3');
+        var Image_Id4 = document.getElementById('getImage4');
+
+        Image_Id4.src = Image_Id3.src;
+
+    }
+</script>
+</body>
+</html>

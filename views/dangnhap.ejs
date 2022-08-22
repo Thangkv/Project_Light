@@ -1,0 +1,389 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/animate/animate.min.css">
+    <link rel="stylesheet" href="plugins/fontawesome/all.css">
+    <link rel="stylesheet" href="plugins/webfonts/font.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="plugins/uikit/uikit.min.css" />
+    <link rel="stylesheet" href="css/sign.css">
+
+    <title>signin</title>
+
+</head>
+
+<body>
+<div class="header">
+    <a style="color: #ffffff;text-decoration: none;" href="index.html">MIỄN PHÍ VẬN CHUYỂN VỚI ĐƠN HÀNG NỘI THÀNH > 300K
+        - ĐỔI TRẢ TRONG 30 NGÀY - ĐẢM BẢO CHẤT LƯỢNG</a>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+
+            <img src="images/logo.png"  class="logo-top" alt="">
+        </a>
+        <div class="desk-menu collapse navbar-collapse justify-content-md-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/trangchu">TRANG CHỦ</a>
+                </li>
+
+                <li class="nav-item lisanpham">
+                    <a class="nav-link" href="/danhsachsanpham">DANH SÁCH SẢN PHẨM
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                    <ul class="sub_menu">
+                        <li class="">
+                            <a href="" title="ĐÈN TRANG TRÍ">
+                                <a href="/dentrangtri"> ĐÈN TRANG TRÍ</a>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="" title="ĐÈN CHÙM">
+                                <a href="/denchum"> ĐÈN CHÙM </a>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="/denoptran" title="ĐÈN ỐP TRẦN">
+                                ĐÈN ỐP TRẦN
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="/dencay" title="ĐÈN CÂY">
+                                ĐÈN CÂY
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="/dentha" title="ĐÈN THẢ">
+                                ĐÈN THẢ
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/gioithieu">GIỚI THIỆU</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/lienhe">LIÊN HỆ</a>
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+    <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar" style="    background: white;
+            width: 350px;">
+
+
+            <h3 style="font-size: 14px;
+                color: #272727;
+                text-transform: uppercase;
+                margin: 3px 0 30px 0;
+                font-weight: 500; letter-spacing: 2px;">Tìm kiếm</h3>
+            <form  action="/products-search" method="GET">
+                <label for="exampleInputEmail1">Tim Kiem</label>
+                <input type="text" name="input1" placeholder="nhap tu khoa tim kiem">
+                <a><button type="submit" class="btn btn-info">Tìm</button></a>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="icon-ol">
+        <a style="color: #272727" href="/dangnhap">
+            <i class="fas fa-user-alt"></i>
+        </a>
+        <a href="#" class="" uk-toggle="target: #offcanvas-flip">
+            <i class="fas fa-search" style="color: black"></i>
+        </a>
+
+        <button class="navbar-toggler" type="button" uk-toggle="target: #offcanvas-flip1" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    </div>
+    </div>
+
+</nav>
+
+
+<!--Content-->
+<div class="content">
+    <section class="signin ">
+        <div class="container">
+            <div class="signin-left">
+                <div class="sign-title">
+                    <h1>Đăng nhập</h1>
+                </div>
+            </div>
+            <div class="signin-right " id="a-sign">
+                <form action="">
+                    <div class="username form-control1 ">
+                        <input type="email"   id="username" placeholder="Email">
+                    </div>
+                    <div class="password form-control1">
+                        <input type="password" id="password" placeholder="Mật khẩu">
+                        <div class="error" style="position: absolute; bottom: 0;background: #fff; padding:10px; border:1px solid #ccc; color: red">Please fill out this field </div>
+
+
+                    </div>
+
+                    <div class="recaptcha form-control1">This site is protected by reCAPTCHA and the Google <a href="">Privacy Policy</a> and <a href="">Terms of Service</a> apply.</div>
+                    <div class="submit">
+                        <input class="btn" type="submit" id="dangnhap" value="Đăng Nhập">
+                        <div class="forgetpassword">
+                            <p id="quenmk">Quên mật khẩu?</p> hoặc <a href="/dangky">Đăng kí</a>
+                        </div>
+
+                    </div>
+
+                </form>
+            </div>
+            <div class="signin-right " id="b-sign">
+                <form action="">
+                    <div class="username form-control1 ">
+                        <h2>Phục hồi mật khẩu</h2>
+                    </div>
+                    <div class="password form-control1">
+                        <input type="text" id="password" placeholder="Mật khẩu">
+                    </div>
+
+                    <div class="recaptcha form-control1">This site is protected by reCAPTCHA and the Google <a href="">Privacy Policy</a> and <a href="">Terms of Service</a> apply.</div>
+                    <div class="submit">
+                        <input class="btn" type="submit" value="Gửi">
+                        <div class="forgetpassword">
+                            <a href="" id="huy">Hủy</a>
+                        </div>
+
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    </section>
+    <section class="">
+        <div class="content">
+            <div class="container">
+                <div class="hot_sp">
+                    <h2 style="text-align:center;padding-top: 10px">
+                        <a style="font-size: 28px;color: black;text-decoration: none" href="">KHÁCH HÀNG REVIEW</a>
+                    </h2>
+                    <br />
+                </div>
+            </div>
+        </div>
+        <!--New-->
+        <div>
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="post_item">
+                            <div class="post_featured">
+                                <a href="#" title="Review1">
+                                    <img class="img-resize" style="padding-bottom:15px;" src="images/review1.jpg"
+                                         alt="review1">
+                                </a>
+                            </div>
+
+                            <div class="pro-text">
+                                <h3 class="post_title">
+                                    <a style=" color: black;
+                                  font-size: 18px;text-decoration: none;" href="#" inspiration pack>
+                                        Anh Quân
+                                    </a>
+                                </h3>
+                            </div>
+                            <div style="text-align:center; padding-bottom: 30px;">
+                  <span>Tôi đã làm việc với Chic Lighting chi nhánh Hà Nội qua 3 dự án nội thất cho khách hàng.
+                    Tôi đánh giá cao Chic Lighting ở thái độ phục vụ, chính sách bảo hành sản phẩm, đặc biệt xử lý lỗi phát sinh rất tốt, vì quyền lợi của khách hàng....</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="post_item">
+                            <div class="post_featured">
+                                <a href="#" title="review2">
+                                    <img class="img-resize" style="padding-bottom:15px;" src="images/review2.jpg"
+                                         alt="review2">
+                                </a>
+                            </div>
+
+                            <div class="pro-text">
+                                <h3 class="post_title">
+                                    <a style=" color: black;
+                                                  font-size: 18px;text-decoration: none;" href="#" inspiration pack>
+                                        Chị Lan Anh
+                                    </a>
+                                </h3>
+                            </div>
+                            <div style="text-align:center; padding-bottom: 30px;">
+<span>Chic Lighting là đối tác đáng tin cậy, cung cấp mẫu mã đèn số lượng lớn, mẫu đẹp, chất lượng đáng 5 sao.
+  Đặc biệt có chính sách hỗ trợ tốt cho đơn vị xây dựng. Có vấn đề phát sinh đều xử lý nhanh chóng....</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="post_item">
+                            <div class="post_featured">
+                                <a href="#" title="review3">
+                                    <img class="img-resize" style="padding-bottom:15px;" src="images/review3.jpg"
+                                         alt="review3">
+                                </a>
+                            </div>
+
+                            <div class="pro-text">
+                                <h3 class="post_title">
+                                    <a style=" color: black;
+                                      font-size: 18px;text-decoration: none;" href="#" inspiration pack>
+                                        Anh Đức
+                                    </a>
+                                </h3>
+                            </div>
+                            <div style="text-align:center; padding-bottom: 30px;">
+                  <span>Thấy người quen đặt cửa của Chic Lighting đẹp mình cũng thử liên hệ để đơn vị tư vấn cho nhà mới. Giá ổn với phục vụ chu đáo.
+                    Các mẫu đèn rất đa dạng và hợp với phong cách nội thất của nhà mình....</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="footer-col footer-block">
+                            <h4 class="footer-title">
+                                Giới thiệu
+                            </h4>
+                            <div class="footer-content">
+                                <p>Chic Lighting là trang mua sắm trực tuyến của thương hiệu đèn trang trí giúp bạn tiếp
+                                    cận xu hướng công nghệ đèn trang trí mới nhất.</p>
+                                <div class="logo-footer">
+                                    <img src="images/logo-bct.png" alt="Bộ Công Thương">
+                                </div>
+                                <div class="social-list">
+                                    <a href="#" class="fab fa-facebook"></a>
+                                    <a href="#" class="fab fa-google"></a>
+                                    <a href="#" class="fab fa-twitter"></a>
+                                    <a href="#" class="fab fa-youtube"></a>
+                                    <a href="#" class="fab fa-skype"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="footer-col footer-link">
+                            <h4 class="footer-title">
+                                PHÁP LÝ &amp; CÂU HỎI
+                            </h4>
+                            <div class="footer-content toggle-footer">
+                                <ul>
+                                    <li class="item">
+                                        <a href="#" title="Tìm kiếm">Tìm kiếm</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#" title="Giới thiệu">Giới thiệu</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#" title="Chính sách đổi trả">Chính sách đổi trả</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#" title="Chính sách bảo mật">Chính sách bảo mật</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#" title="Điều khoản dịch vụ">Điều khoản dịch vụ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="footer-col footer-block">
+                            <h4 class="footer-title">
+                                Thông tin liên hệ
+                            </h4>
+                            <div class="footer-content toggle-footer">
+                                <ul>
+                                    <li><span>Địa chỉ:</span> 8 Tôn Thất Thuyết, Cầu Giấy, Hà Nội, Vietnam</li>
+                                    <li><span>Điện thoại:</span> +84 (024) 99999999</li>
+                                    <li><span>Fax:</span> +84 (024) 99999999</li>
+                                    <li><span>Mail:</span> Nhom4T2203E@gmail.com</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="footer-col footer-block">
+                            <h4 class="footer-title">
+                                FANPAGE
+                            </h4>
+                            <div class="footer-content">
+                                <div id="fb-root">
+                                    <div class="footer-static-content">
+                                        <div class="fb-page" data-href=""
+                                             data-tabs="timeline" data-width="" data-height="215" data-small-header="false"
+                                             data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                                            <blockquote cite=""
+                                                        class="fb-xfbml-parse-ignore"><a
+                                                        href="https://www.facebook.com/groups/1605312529830603/?multi_permalinks=1701751043520084&notif_id=1660190024831977&notif_t=group_activity&ref=notif">CHIC LIGHTING</a>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-footer--copyright">
+            <div class="container">
+                <hr>
+                <div class="main-footer--border" style="text-align:center;padding-bottom: 15px;">
+                    <p>Copyright © 2022 <a href=""> Chic Lighting</a>. <a target="_blank"
+                                                                          href="">Powered by Nhom4T2203E</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script async defer crossorigin="anonymous" src="plugins/sdk.js"></script>
+    <script src="plugins/jquery-3.4.1/jquery-3.4.1.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <script src="plugins/bootstrap/popper.min.js"></script>
+    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="plugins/owl.carousel/owl.carousel.min.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/script.js"></script>
+    <script src="plugins/uikit/uikit.min.js"></script>
+    <script src="plugins/uikit/uikit-icons.min.js"></script>
+    <script src="js/sign.js"></script>
+</body>
+
+</html>
